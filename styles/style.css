@@ -51,6 +51,7 @@ ul li a{
 }
 .btn-container{
     display: flex;
+    gap: 10px;
 }
 /* banner styles */
 .banner{
@@ -82,7 +83,7 @@ ul li a{
     border: 2px solid #FD6E0A;
     border-radius: 5px;
     opacity: 100%;
-    margin-left: 20px;
+    
 
 }
 .btn{
@@ -241,6 +242,9 @@ footer input[type="text"], input[type="email"]{
     opacity: 100%;
     margin-bottom: 50px;
 }
+.icons a{
+    margin-left: 20px;
+}
 .footer-comment-box{
     border-radius: 5px;
     background-color: white;
@@ -248,9 +252,6 @@ footer input[type="text"], input[type="email"]{
     width: 100%;
     padding: 10px 20px;
     margin-bottom: 24px;
-}
-.hide{
-    display: none;
 }
 
 /* Smaller Devices Responsive */
@@ -265,9 +266,7 @@ footer input[type="text"], input[type="email"]{
     hr{
         margin-right: 30px;
     }
-    .primary-btn{
-        margin-right: 100px;
-    }
+
     .footer{
         flex-direction: column;
     }
@@ -291,5 +290,23 @@ footer input[type="text"], input[type="email"]{
     }
     .section-description{
         max-width: 450px;
+    }
+nav{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .banner, .banner-profile-picture{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .btn-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contain{
+        margin: 0;
+        margin-left: 50px;
     }
 }
